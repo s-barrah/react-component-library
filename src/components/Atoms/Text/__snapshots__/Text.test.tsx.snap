@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atom/Text - renders xl paragraph with Anton font correctly 1`] = `
+.c0 {
+  font-size: 1.725rem;
+  text-transform: inherit;
+  font-weight: font-weight:normal;
+  font-family: 'Anton',Helvetica,Arial,sans-serif;
+}
+
+<p
+  className="c0"
+  color="inherit"
+  family="Anton"
+  size="xl"
+  weight="normal"
+>
+  My paragraph xl and font Anton
+</p>
+`;
+
+exports[`Atoms/Text component - renders xl yellow paragraph correctly 1`] = `
+.c0 {
+  font-size: 1.725rem;
+  text-transform: inherit;
+  font-weight: font-weight:normal;
+  font-family: 'Montserrat',Helvetica,Arial,sans-serif;
+}
+
+<p
+  className="c0"
+  color="yellow"
+  family="Montserrat"
+  size="xl"
+  weight="normal"
+>
+  My paragraph xl and yellow
+</p>
+`;
