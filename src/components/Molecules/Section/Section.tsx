@@ -5,7 +5,6 @@ import * as PropTypes from 'prop-types';
 import Text from '../../Atoms/Text/Text';
 import RichText from '../../Atoms/RichText/RichText';
 
-
 interface IProps {
   title: string;
   titleFamily?: string;
