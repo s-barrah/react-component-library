@@ -4,7 +4,7 @@ const { version } = require('./package');
 module.exports = {
   getComponentPathLine(componentPath) {
     const name = path.basename(componentPath, '.tsx');
-    return `import { ${name} } from 'react-component-library';`;
+    return `import { ${name} } from 'rcl-demo';`;
   },
   styleguideComponents: {
     Wrapper: path.join(__dirname, 'src/styleguide/ThemeWrapper')

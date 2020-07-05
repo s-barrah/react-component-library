@@ -1,6 +1,6 @@
 [![CircleCI](https://circleci.com/gh/s-barrah/react-component-library.svg?style=svg&circle-token=dbd3768989213f5e3b96fc33c5f289e18d2fd2d5)](https://app.circleci.com/pipelines/github/s-barrah/react-component-library)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![semantic-release](https://badge.fury.io/js/react-component-library.svg)](https://www.npmjs.com/package/react-component-library)
+[![semantic-release](https://badge.fury.io/js/rcl-demo.svg)](https://www.npmjs.com/package/rcl-demo)
 
 React Component Library
 --------------
@@ -13,17 +13,17 @@ CL has a dependency of `styled-components`.
 
 #### Install the package
 ```
-$ yarn add react-component-library
+$ yarn add rcl-demo
 ```
 
 #### Wrap app with the ThemeProvider and theme
 ```
- import { ThemeProvider, theme } from 'react-component-library';
+ import { ThemeProvider, theme } from 'rcl-demo';
 ```
 
 #### Import components
 ```
- import { Button } from 'react-component-library';
+ import { Button } from 'rcl-demo';
 ```
 
 #### Develop
@@ -43,6 +43,11 @@ To test
 $ yarn test
 ```
 _Test will run through all jest tests and watch for any changes on snapshots._
+
+To publish
+```
+$ npm publish
+```
 
 #### Build
 

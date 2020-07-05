@@ -1,11 +1,10 @@
 {
-  "name": "react-component-library",
+  "name": "rcl-demo",
   "version": "0.0.0-see.readme",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "author": "Sidney Barrah",
   "license": "ISC",
-  "private": true,
   "dependencies": {
     "@babel/cli": "^7.10.3",
     "@babel/node": "^7.10.3",
