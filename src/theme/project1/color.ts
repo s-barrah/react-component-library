@@ -1,5 +1,4 @@
-
-const colors: {[index: string]: string } = {
+const colors: { [index: string]: string } = {
   red: '#e94b35',
   black: '#323232',
   blue: '#337ab7',
@@ -9,7 +8,6 @@ const colors: {[index: string]: string } = {
   orange: '#ff9900',
   white: '#FFFFFF',
 };
-
 
 const color = (colorName: string): string => {
   return colorName ? colors[colorName] : 'inherit';

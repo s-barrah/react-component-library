@@ -1,19 +1,19 @@
-import * as React from "react";
-import "jest-styled-components";
+import * as React from 'react';
+import 'jest-styled-components';
 
-import renderWithTheme from "../../../hoc/shallowWithTheme";
+import renderWithTheme from '../../../hoc/shallowWithTheme';
 
-import Section from "./Section";
+import Section from './Section';
 
 const htmlContent =
   "<p>Here's the section description copy</p><span>More copy</span>";
 
-it("Atoms/RichText component - It sanitises markup and renders", () => {
+it('Atoms/RichText component - It sanitises markup and renders', () => {
   const component = renderWithTheme(
     <Section
-      title={"Test Section"}
-      titleTag={"h1"}
-      uppercase={true}
+      title="Test Section"
+      titleTag="h1"
+      uppercase
       content={htmlContent}
     />
   ).toJSON();

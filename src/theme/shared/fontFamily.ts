@@ -2,7 +2,7 @@ interface IFontFamilies {
   [index: string]: {
     font: string;
     fallback: string;
-  }
+  };
 }
 
 const fontFamilies: IFontFamilies = {
@@ -12,5 +12,7 @@ const fontFamilies: IFontFamilies = {
 };
 
 export default (family: string): string => {
-  return family && fontFamilies[family] ? `'${fontFamilies[family].font}', ${fontFamilies[family].fallback}, sans-serif` : 'inherit';
+  return family && fontFamilies[family]
+    ? `'${fontFamilies[family].font}', ${fontFamilies[family].fallback}, sans-serif`
+    : 'inherit';
 };

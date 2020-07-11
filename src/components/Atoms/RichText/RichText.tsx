@@ -11,23 +11,32 @@ interface IRichTextProps extends IInnerProps {
 }
 
 const Inner = styled.div<IInnerProps>`
-    text-align: ${(props) => props.align};
+  text-align: ${(props) => props.align};
 `;
 
-const RichText = ({ align, markup, ...rest }: IRichTextProps): JSX.Element => {
-  return <Inner align={align} dangerouslySetInnerHTML={{ __html: markup }} {...rest} />;
+const RichText = ({
+  align,
+  markup = '',
+  ...rest
+}: IRichTextProps): JSX.Element => {
+  return (
+    <Inner
+      align={align}
+      dangerouslySetInnerHTML={{ __html: markup }}
+      {...rest}
+    />
+  );
 };
 
 RichText.propTypes = {
   /** Align text */
   align: PropTypes.oneOf(['left', 'center', 'right']),
   /** Text markup */
-  markup: PropTypes.string,
+  markup: PropTypes.string.isRequired,
 };
 
 RichText.defaultProps = {
   align: 'left',
-  markup: '',
 };
 
 export default RichText;

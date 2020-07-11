@@ -18,15 +18,15 @@ interface IProps {
 }
 
 const Section: React.FC<IProps> = ({
-  title,
-  titleTag,
+  title = '',
+  titleTag = 'h1',
   titleFamily,
   titleSize,
   titleWeight,
   titleColor,
   uppercase,
   bodyAlign,
-  content
+  content = '',
 }) => {
   return (
     <>
@@ -40,10 +40,7 @@ const Section: React.FC<IProps> = ({
       >
         {title}
       </Text>
-      <RichText
-        align={bodyAlign}
-        markup={content}
-      />
+      <RichText align={bodyAlign} markup={content} />
     </>
   );
 };
@@ -53,10 +50,8 @@ Section.defaultProps = {
   titleWeight: 'normal',
   uppercase: false,
   titleColor: 'inherit',
-  titleTag: 'h1',
   titleSize: 'l',
   bodyAlign: 'left',
-  content: ''
 };
 
 Section.propTypes = {

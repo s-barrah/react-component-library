@@ -1,5 +1,4 @@
-
-export const fontSizes: {[index: string]: string } = {
+export const fontSizes: { [index: string]: string } = {
   xs: '0.83125rem',
   s: '1rem',
   m: '1.2rem',
