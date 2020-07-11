@@ -44,6 +44,11 @@ $ yarn test
 ```
 _Test will run through all jest tests and watch for any changes on snapshots._
 
+To run lint
+```
+$ yarn lint
+```
+
 To publish
 ```
 $ npm publish
@@ -63,4 +68,4 @@ $ yarn styleguide:build
 
 ### Preview
 
-- [gv-component-library.netlify.app](https://gv-component-library.netlify.app)
+- [rcl-demo.netlify.app](https://rcl-demo.netlify.app/)
